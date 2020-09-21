@@ -9,50 +9,273 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="assets/images/icons/icons8-developer-96.png"
+      type="image/png"
+    />
+    <meta name="author" content="Dmitry Artemiev" />
+    <meta name="description" content="Front-end Developer Portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <nav class="nav">
-            <a class="nav__link" href="#">Link 1</a>
-            <a class="nav__link" href="#">Link 2</a>
-            <a class="nav__link" href="#">Link 3</a>
-            <a class="nav__link" href="#">Link 4</a>
-            <a class="nav__link" href="#">Link 5</a>
+            <ul>
+              <li><a class="nav__link firstlink" href="#home">Home</a></li>
+              <li><a class="nav__link" href="#meetup">About me</a></li>
+              <li><a class="nav__link" href="#myskills">My skills</a></li>
+              <li><a class="nav__link" href="#myprojects">My projects</a></li>
+              <li>
+                <a class="nav__link lastlink" href="#contactme">Contact me</a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
     </header>
     <div class="intro">
       <div class="container">
-        <h1 class="intro__title">
+        <h1 class="intro__title" id="home">
           Front-end Developer, Team Player, Awesome Guy
         </h1>
         <h2 class="intro__subtitle">
           I code amazing things, and I love what i do.
         </h2>
-        <div class="photo__container">
-          <img class="avatar" src="assets/images/photo.png" alt="Avatar" />
-        </div>
       </div>
     </div>
+
     <section class="section">
       <div class="container">
-        <div class="section__header">
-          <h2 class="section__title">Hi, I'm Dima. Nice to meet you.</h2>
-          <div class="section__text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              facere molestiae eum nemo deleniti placeat repellat, a eveniet.
-              Hic velit voluptatum commodi quaerat ullam aliquid autem
-              blanditiis voluptate et corrupti, explicabo, saepe dolorem at
-              omnis atque id dolores vel dolore alias, aut eius ad. Dicta
-              impedit ipsam omnis officia odio.
-            </p>
+        <div class="meetup">
+          <img class="avatar" src="assets/images/photo.png" alt="Avatar" />
+          <div class="meetup__item">
+            <div id="meetup" class="meetup__title">
+              Hi, I'm Dima. Nice to meet you!
+            </div>
+            <div class="meetup__text">
+              I achieved a bachelor's degree at Igor Sikorsky Kyiv Polytechnic
+              Institute at the Department of Mechanical Engineering and now I am
+              getting a master's degree. At the moment my location is Kyiv, but
+              I'm always opened to relocation. I'm studying at
+              <b> Unit IT Academy</b> on Front-end and code is my passion! I'm
+              sure that I can find a common languge with everyone and I'm
+              looking forward for you to check it!
+            </div>
+            <div class="meetup__cv"><a href="#">download my cv</a></div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 id="myskills" class="section__title">
+          What i can?
+        </h2>
+        <div class="skills">
+          <div class="skills__item">
+            <img
+              class="skills__icon"
+              src="assets/images/icons/icons8-html-5-96.png"
+              alt=""
+            />
+            <div class="skills__title">HTML</div>
+            <div class="skills__text">
+              The structure of this page was written with this markup language.
+            </div>
+          </div>
+          <div class="skills__item">
+            <img
+              class="skills__icon"
+              src="assets/images/icons/icons8-css3-96.png"
+              alt=""
+            />
+            <div class="skills__title">CSS</div>
+            <div class="skills__text">
+              This page stylized and distributed with Cascading Style Sheets. How you like the design? 
+            </div>
+          </div>
+          <div class="skills__item">
+            <img
+              class="skills__icon"
+              src="assets/images/icons/icons8-git-96.png"
+              alt=""
+            />
+            <div class="skills__title">Git</div>
+            <div class="skills__text">
+              All my works you can find at my GitHub. That thing provides hosting for software development and version control using Git.
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="skills">
+          <div class="skills__item">
+            <img
+              class="skills__icon"
+              src="assets/images/icons/icons8-code-file-96.png"
+              alt=""
+            />
+            <div class="skills__title">Coding</div>
+            <div class="skills__text">
+              I can make a website for you using all of this tools.
+            </div>
+          </div>
+          <div class="skills__item">
+            <img
+              class="skills__icon"
+              src="assets/images/icons/icons8-javascript-96.png"
+              alt=""
+            />
+            <div class="skills__title">JavaScript</div>
+            <div class="skills__text">
+              JS is next step in my code learning. I'll get it ASAP.
+            </div>
+          </div>
+          <div class="skills__item">
+            <img
+              class="skills__icon"
+              src="assets/images/icons/icons8-react-native-96.png"
+              alt=""
+            />
+            <div class="skills__title">React</div>
+            <div class="skills__text">
+              React.js is an open-source JavaScript library for building user interfaces or UI components. This is my goal to achieve.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="projects">
+          <div id="myprojects" class="section__title">My Projects</div>
+          <div class="projects__text">
+            Here you can see the projects that I have developed and the companies with which I worked.
+          </div>
+          <div class="projects__gallery">
+            <div class="projects__logocontainer">
+              <img
+                class="projects__logo"
+                src="assets/images/Logo_Ucode.png"
+                alt=""
+              />
+              <div class="projects__hovertext">Studying Unit IT Academy</div>
+            </div>
+
+            <div class="projects__logocontainer">
+              <img
+                class="projects__logo"
+                src="https://placehold.it/400x200"
+                alt=""
+              />
+              <div class="projects__hovertext">SOON</div>
+            </div>
+
+            <div class="projects__logocontainer">
+              <img
+                class="projects__logo"
+                src="https://placehold.it/400x200"
+                alt=""
+              />
+              <div class="projects__hovertext">SOON</div>
+            </div>
+
+            <div class="projects__logocontainer">
+              <img
+                class="projects__logo"
+                src="https://placehold.it/400x200"
+                alt=""
+              />
+              <div class="projects__hovertext">SOON</div>
+            </div>
+
+            <div class="projects__logocontainer">
+              <img
+                class="projects__logo"
+                src="https://placehold.it/400x200"
+                alt=""
+              />
+              <div class="projects__hovertext">SOON</div>
+            </div>
+
+            <div class="projects__logocontainer">
+              <img
+                class="projects__logo"
+                src="https://placehold.it/400x200"
+                alt=""
+              />
+              <div class="projects__hovertext">SOON</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div id="contactme" class="footer__title">
+            Contact me
+          </div>
+
+          <div class="footer__content">
+            <div class="footer__emailme">
+              E-Mail me:
+              <a href="mailto:dima77261@gmail.com">dima77261@gmail.com</a>
+            </div>
+            <div class="footer__callme">
+              Call me:
+              <a href="tel:+380953782072">+38(095)378-20-72</a>
+            </div>
+            <div class="footer__social">
+              <a
+                href="https://www.facebook.com/profile.php?id=100043239137156"
+                target="_blank"
+              >
+                <img
+                  class="social__icon"
+                  src="assets/images/social/facebook-7-128.png"
+                  alt="Facebook"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/itsdmitryartemiev/"
+                target="_blank"
+                ><img
+                  class="social__icon"
+                  src="assets/images/social/instagram-128.png"
+                  alt="Instagram"
+              /></a>
+
+              <a
+                href="https://www.linkedin.com/in/dmitry-artemiev-2584121b5/"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/social/linkedin-6-128.png"
+                  alt="LinkedIn"
+                  class="social__icon"
+              /></a>
+              <a href="https://github.com/dmitryartemiev" target="_blank"
+                ><img
+                  src="assets/images/social/github-11-128.png"
+                  alt="GitHub"
+                  class="social__icon"
+              /></a>
+              <a href="https://t.me/think222ice" target="_blank"
+                ><img
+                  src="assets/images/social/telegram-3-128.png"
+                  alt="Telegram"
+                  class="social__icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
